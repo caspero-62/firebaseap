@@ -1,13 +1,57 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-family: sans-serif;
+  background-image: url('./img/webdot-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  /* background-color: #95e8f3; */
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+form{
+  padding: 20px 35px;
+  margin-top: 50px;
+}
+
+form button, form h5{
+  margin: 20px 0;
+}
+
+form input{
+  margin-top: 70px;
+}
+
+.left.logo{
+  font-size: 1.9rem;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+
+@media screen and (max-width: 456px) {
+  .nav-wrapper.grey{
+    min-height: 20vh; 
+  }
+
+  .nav-wrapper.grey .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-wrapper.grey .left, .nav-wrapper.grey .right{
+    align-self: center;
+  }
 }
